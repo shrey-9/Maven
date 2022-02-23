@@ -1,0 +1,15 @@
+package com.shrey.product.dao;
+
+import org.junit.Test;
+
+public class ProductDaoImplTest {
+
+	@Test
+	public void createShouldCreateAProduct() {
+		
+		ProductDao dao = new ProductDaoImpl();
+		
+		dao.create(product);
+	}
+
+}

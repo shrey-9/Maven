@@ -1,0 +1,20 @@
+package com.shrey.product.dao;
+
+import org.junit.Test;
+
+import com.shrey.product.dto.Product;
+
+public class ProductDaoImplTest {
+
+	@Test
+	public void createShouldCreateAProduct() {
+		
+		ProductDao dao = new ProductDaoImpl();
+		Product product = new Product();
+		product.setId(1);
+		product.setDescription("Awesome");
+		product.setPrice(800);
+		dao.create(product);
+	}
+
+}
